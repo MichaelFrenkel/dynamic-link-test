@@ -1,15 +1,24 @@
-<a href="https://www.reactorconnect.graco.com/menu?menu=3" id="openAppLink">Open the App Settings</a>
+<a onclick="navigateAndroid()" style="text-decoration: underline;">Android: Open the App Settings</a>
+<br />
+<a onclick="navigateIOS()" style="text-decoration: underline;">iOS: Open the App Settings</a>
+
 
 <script>
-    document.getElementById("openAppLink").addEventListener("click", function(e) {
-        var appLink = "https://www.reactorconnect.graco.com/menu?menu=3";
-        var appStoreLink = "https://play.google.com/store/apps/details?id=com.graco.reactor&hl=en"; 
+    function navigateAndroid() {
+        navigate("https://play.google.com/store/apps/details?id=com.graco.reactor&hl=en")
+    }
 
-    
+    function navigateIOS() {
+        navigate("https://apps.apple.com/us/app/reactor-connect/id1308544732")
+    }
+
+    function navigate(appStoreLink) {
+        var appLink = "https://www.reactorconnect.graco.com/menu?menu=3";
+
         window.location.href = appLink;
 
         setTimeout(function() {
             window.location.href = appStoreLink;
         }, 500);
-    });
+    }
 </script>
