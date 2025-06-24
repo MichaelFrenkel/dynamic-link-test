@@ -1,0 +1,15 @@
+<a href="https://www.reactorconnect.graco.com/menu?menu=3" id="openAppLink">Open the App Settings</a>
+
+<script>
+    document.getElementById("openAppLink").addEventListener("click", function(e) {
+        var appLink = "https://www.reactorconnect.graco.com/menu?menu=3";
+        var appStoreLink = "https://play.google.com/store/apps/details?id=com.graco.reactor&hl=en"; 
+
+    
+        window.location.href = appLink;
+
+        setTimeout(function() {
+            window.location.href = appStoreLink;
+        }, 500);
+    });
+</script>
