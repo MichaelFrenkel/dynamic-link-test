@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.graco.reactor",
+      "sha256_cert_fingerprints": [
+        "1A:E1:36:E8:6D:59:93:8A:15:8F:B1:92:4A:4E:F7:D3:2A:73:E4:E3:BA:9E:E8:FD:49:D0:8B:91:54:1B:BE:B2"
+      ]
+    }
+  }
+]
